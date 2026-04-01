@@ -1,0 +1,14 @@
+var a = 10;
+console.log(typeof(a));
+var b = "console";
+console.log(typeof(b));
+var c = true;
+console.log(typeof(c));
+var d;
+console.log(typeof(d));
+var e = null;
+console.log(typeof(e));
+var f = {a: 10, b: 20};
+console.log(f.a);
+console.log(f.b);
+console.log(typeof(f));

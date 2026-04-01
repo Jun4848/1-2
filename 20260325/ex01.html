@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #score{
+            background-color: rgb(159, 158, 158);
+            border: none;
+            height: 20px;
+            border-bottom: 1px dotted rgb(10, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>성적확인</h1>
+    <!--90이상 100이하 A학점-->
+    <input type="text" name="" id="score" value="100">
+    <button id = "check">성적 확인</button>
+    <div id="print">
+
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("check").onclick = function(){
+        const num = document.getElementById("score").value;
+
+        if (90 <= num && num <= 100){
+            document.getElementById('print').textContent = "A학점";
+        }else if (80<=num){
+            document.getElementById('print').textContent = "B학점";
+        }else if (70<=num){
+            document.getElementById('print').textContent = "C학점";
+        }else if (60<=num){
+            document.getElementById('print').textContent = "D학점";
+        }else if (50<=num){
+            document.getElementById('print').textContent = "F학점";
+        }
+    }
+    //console.log(document)
+</script>
